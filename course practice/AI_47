@@ -1,0 +1,9 @@
+#! /bin/bash
+source activate pytorch
+python AI_47.py  \
+--test-batch-size 50 \
+--log-interval 100  \
+--resume checkpoint.pth.tar  \
+--epochs 100  \
+--model-name vgg16_bn
+source deactivate
